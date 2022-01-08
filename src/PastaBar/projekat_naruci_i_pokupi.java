@@ -41,9 +41,19 @@ public class projekat_naruci_i_pokupi {
 		for (int i = 0; i < ingredients.length; i++) {
 			if (ingredients[i].equals(ingredientName)) {
 				return cene[i];
-			}
-		}
+	}
+	}
 		return 0;
 	}
-
-}
+	
+	public static boolean isRegularCustomer(String[] phoneNumbers, String phone) {
+		for (int i = 0; i < phoneNumbers.length; i++) {
+			if (phone.equals(phoneNumbers[i])) {
+				return true;
+		}
+		}
+		return false;
+	
+	}
+	
+	}
